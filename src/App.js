@@ -5,97 +5,91 @@ import './App.css';
 import store from "./store";
 import { Provider } from "react-redux";
 import { BrowserView, MobileView } from "react-device-detect";
-import Dialog from '@mui/material/Dialog';
-import Button from "@mui/material/Button";
-import DialogContent from "@mui/material/DialogContent";
-import DialogTitle from "@mui/material/DialogTitle";
+// import Slide from '@mui/material/Slide';
+// import Dialog from '@mui/material/Dialog';
+// import Button from "@mui/material/Button";
+// import DialogContent from "@mui/material/DialogContent";
+// import DialogTitle from "@mui/material/DialogTitle";
 
-import { contextMenu, detectBrowser } from "./util/Helper";
-import { Constants } from "./common/constant/localstorage";
-import CloseWhite from "./assets/images/icons/close-white.svg";
-import Slide from '@mui/material/Slide';
-const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="up" ref={ref} {...props} />;
-});
+// import { contextMenu, detectBrowser } from "./util/Helper";
+// import { Constants } from "./common/constant/localstorage";
+// import CloseWhite from "./assets/images/icons/close-white.svg";
+
+// const Transition = React.forwardRef(function Transition(props, ref) {
+//   return <Slide direction="up" ref={ref} {...props} />;
+// });
 
 function App() {
-  let now = moment();
-  let currentDate = new Date();
-  const [offlineOpen, setOfflineOpen] = useState(true);
-  const [onlineOpen, setOnlineOpen] = useState(false);
-  const [onlineModal, setOnlineModal] = useState(false);
-  const [offlineModal, setOfflineModal] = useState(false);
-  const [online, setOnline] = useState();
-  const [offline, setOffline] = useState(false);
+  
+  // const [offlineOpen, setOfflineOpen] = useState(true);
+  // const [onlineOpen, setOnlineOpen] = useState(false);
+  // const [onlineModal, setOnlineModal] = useState(false);
+  // const [offlineModal, setOfflineModal] = useState(false);
+  // const [online, setOnline] = useState();
+  // const [offline, setOffline] = useState(false);
 
 
-  useEffect(() => {
-    // console.log(localStorage.getItem(Constants.TOKEN_EXPIRY),"<<<<<<<<<<<<<<<<<<<<< TOKEN_EXPIRY")
-    // console.log(now.format("YYYY-MM-DD HH:mm:ss"),"<<<<<<<<<<<<<<<<<<<<< Current date")
-    // if(localStorage.getItem(Constants.TOKEN_EXPIRY) < (now.format("YYYY-MM-DD HH:mm:ss"))){
-    // 	localStorage.clear();
-    // }else{
-    // 	console.log("No")
-    // }
-    localStorage.setItem(Constants.DEVICE_NAME, detectBrowser());
-    // contextMenu();
+  // useEffect(() => {
+  //   // contextMenu();
+  //   // localStorage.setItem(Constants.DEVICE_NAME, detectBrowser());
+  //   function handleOnline() {
+  //     console.log("called", offline);
+  //     if (offline !== undefined) {
+  //       setOnline(true);
+  //       setOffline(false);
+  //     }
+  //   }
 
-    function handleOnline() {
-      console.log("called", offline);
-      if (offline !== undefined) {
-        setOnline(true);
-        setOffline(false);
-      }
-    }
+  //   function handleOffline() {
+  //     setOnline(false);
+  //   }
 
-    function handleOffline() {
-      setOnline(false);
-    }
+  //   window.addEventListener("online", handleOnline);
+  //   window.addEventListener("offline", handleOffline);
 
-    window.addEventListener("online", handleOnline);
-    window.addEventListener("offline", handleOffline);
+  //   return () => {
+  //     window.removeEventListener("online", handleOnline);
+  //     window.removeEventListener("offline", handleOffline);
+  //   };
+  // }, []);
 
-    return () => {
-      window.removeEventListener("online", handleOnline);
-      window.removeEventListener("offline", handleOffline);
-    };
-  }, []);
+  // useEffect(() => {
+  //   if (online === true) {
+  //     setOnlineModal(true);
+  //     setOfflineModal(false);
+  //   } else if (online === false) {
+  //     setOfflineModal(true);
+  //     setOnlineModal(false);
+  //   }
+  // }, [online]);
 
-  useEffect(() => {
-    if (online === true) {
-      setOnlineModal(true);
-      setOfflineModal(false);
-    } else if (online === false) {
-      setOfflineModal(true);
-      setOnlineModal(false);
-    }
-  }, [online]);
+  // function handleOnline() {
+  //   setOnlineModal(false);
+  // }
 
-  function handleOnline() {
-    setOnlineModal(false);
-  }
+  // function handleOffline() {
+  //   setOfflineModal(false);
+  // }
 
-  function handleOffline() {
-    setOfflineModal(false);
-  }
+  // function handleOfflineFlag() {
+  //   setOffline(true);
+  // }
 
-  function handleOfflineFlag() {
-    setOffline(true);
-  }
-
-  const handleOfflineClose = () => {
-    setOfflineOpen(true);
-    setOnlineOpen(true);
-  };
-  const handleOnlineClose = () => {
-    setOfflineOpen(true);
-    setOnlineOpen(false);
-  };
+  // const handleOfflineClose = () => {
+  //   setOfflineOpen(true);
+  //   setOnlineOpen(true);
+  // };
+  // const handleOnlineClose = () => {
+  //   setOfflineOpen(true);
+  //   setOnlineOpen(false);
+  // };
   return (
     <Provider store={store}>
     <div className="App">
+   
       <BrowserView>
-        <Dialog
+      <WebRouter />
+        {/* <Dialog
           fullWidth={true}
           maxWidth={"lg"}
           open={offlineModal}
@@ -109,9 +103,6 @@ function App() {
               <DialogTitle>
                 You are offline now, Please check your Internet connection.
               </DialogTitle>
-              {/* <Button onClick={handleOffline} color="primary">
-                  <img src={CloseWhite} alt="CloseWhite"/>
-                </Button> */}
             </div>
           </DialogContent>
         </Dialog>
@@ -132,9 +123,9 @@ function App() {
               </Button>
             </div>
           </DialogContent>
-        </Dialog>
+        </Dialog> */}
         
-        <WebRouter />
+        
       </BrowserView>
       <MobileView>
         <MobileRouter />

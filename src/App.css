@@ -31,6 +31,9 @@ body {
   padding: 0;
   scroll-behavior: smooth;
 }
+*{
+  margin: 0;
+}
 
 .tealishColor {
   color: var(--tealish);
