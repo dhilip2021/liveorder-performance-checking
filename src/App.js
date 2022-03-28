@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import WebRouter from "./router/WebRouter";
 import MobileRouter from "./router/MobileRouter";
 import './App.css';
+import "./PwAApp.css";
 import store from "./store";
 import { Provider } from "react-redux";
 import { BrowserView, MobileView } from "react-device-detect";
