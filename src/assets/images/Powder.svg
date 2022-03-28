@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56.631" height="90.019" viewBox="0 0 56.631 90.019">
+  <g id="protein_powder" data-name="protein powder" transform="translate(-9.224 -2.17)">
+    <path id="Shape" d="M13.442,0H42.255A13.376,13.376,0,0,1,55.631,13.376V70.827a8.238,8.238,0,0,1-8.238,8.238H8.238A8.238,8.238,0,0,1,0,70.827V13.376A13.376,13.376,0,0,1,13.442,0Z" transform="translate(9.724 12.623)" fill="#fff" stroke="#674cf3" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Shape-2" data-name="Shape" d="M13.4,0H36.985A13.376,13.376,0,0,1,50.362,13.376V70.827a8.238,8.238,0,0,1-8.238,8.238H8.26A8.238,8.238,0,0,1,0,70.827V13.376A13.376,13.376,0,0,1,13.4,0Z" transform="translate(15.362 12.623)" fill="#674cf3" opacity="0.1"/>
+    <path id="Shape-3" data-name="Shape" d="M4.77,0H50.775a4.879,4.879,0,0,1,4.856,4.9V7.07a2.949,2.949,0,0,1-2.949,2.884H2.927A2.949,2.949,0,0,1,0,7.07V4.9A4.879,4.879,0,0,1,4.77,0Z" transform="translate(9.724 2.67)" fill="#fff" stroke="#674cf3" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Rectangle-path" d="M1.36,0H50.953a1.36,1.36,0,0,1,1.36,1.36V7.618a1.36,1.36,0,0,1-1.36,1.36H1.36A1.36,1.36,0,0,1,0,7.618V1.36A1.36,1.36,0,0,1,1.36,0Z" transform="translate(13.063 4.426)" fill="#674cf3" opacity="0.1"/>
+    <path id="Shape-4" data-name="Shape" d="M7.008,0h29.41c3.006,0,5.613,2.268,5.613,5.058l.025,32.51c0,2.791-2.633,5.066-5.639,5.066H7.008A6.771,6.771,0,0,1,0,36.129V6.484A6.773,6.773,0,0,1,7.008,0Z" transform="translate(22.808 31.107)" fill="#fbc840" opacity="0.78"/>
+  </g>
+</svg>

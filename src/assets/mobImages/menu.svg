@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.05" height="17.942" viewBox="0 0 25.05 17.942">
+    <defs>
+        <style>
+            .cls-2{fill:#5b636a}
+        </style>
+    </defs>
+    <g id="menu" opacity="0.7" transform="translate(-257 -526.3)">
+        <g id="Group_4470" transform="translate(264.05 527.096)">
+            <path id="Path_7913" d="M652.917 566.271h-16.034c-.542 0-.983-.6-.983-1.335s.441-1.335.983-1.335h16.034c.542 0 .983.6.983 1.335s-.441 1.335-.983 1.335z" class="cls-2" transform="translate(-635.9 -563.6)"/>
+        </g>
+        <g id="Group_4471" transform="translate(264.05 533.938)">
+            <path id="Path_7914" d="M652.917 938.373h-16.034a1.208 1.208 0 0 1 0-2.373h16.034a1.208 1.208 0 0 1 0 2.373z" class="cls-2" transform="translate(-635.9 -936)"/>
+        </g>
+        <g id="Group_4472" transform="translate(264.05 540.714)">
+            <path id="Path_7915" d="M652.917 1310.773h-16.034a1.208 1.208 0 0 1 0-2.373h16.034a1.208 1.208 0 0 1 0 2.373z" class="cls-2" transform="translate(-635.9 -1308.4)"/>
+        </g>
+        <g id="Group_4473" transform="translate(257 526.3)">
+            <circle id="Ellipse_1457" cx="2.162" cy="2.162" r="2.162" class="cls-2" transform="translate(0 0)"/>
+        </g>
+        <g id="Group_4474" transform="translate(257 533.142)">
+            <circle id="Ellipse_1458" cx="2.162" cy="2.162" r="2.162" class="cls-2" transform="translate(0 0)"/>
+        </g>
+        <g id="Group_4475" transform="translate(257 539.919)">
+            <circle id="Ellipse_1459" cx="2.162" cy="2.162" r="2.162" class="cls-2" transform="translate(0 0)"/>
+        </g>
+    </g>
+</svg>
